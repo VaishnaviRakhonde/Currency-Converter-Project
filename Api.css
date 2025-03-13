@@ -1,0 +1,169 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #87CEFA, #4682B4);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #4682B4;
+}
+
+/* Main Container */
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #2F4F4F;
+}
+
+/* Form Styling */
+form {
+    margin: 1.5rem 0;
+}
+
+form p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+form input, select, button {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+form input {
+    border: 1px solid #555;
+    font-size: 1rem;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+/* Currency Selection */
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.dropdown i {
+    font-size: 1.8rem;
+    color: #4682B4;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown i:hover {
+    transform: rotate(180deg);
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    width: 7rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #f9f9f9;
+}
+
+.select-container img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.select-container select {
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Exchange Rate Message */
+.msg {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2F4F4F;
+}
+
+/* Button Styling */
+form button {
+    height: 3rem;
+    background: linear-gradient(to right, #87CEFA, #4682B4);
+    color:black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #4b97c7, #8eb9df);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 10.2rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    
+    .dropdown {
+        flex-direction: column;
+    }
+    
+    .dropdown i {
+        margin: 1rem 0;
+    }
+}
